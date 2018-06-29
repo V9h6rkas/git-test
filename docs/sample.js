@@ -1,11 +1,11 @@
 var can = document.getElementById("canvas");
 var ctx = can.getContext("2d");
 
-var count = 0;//アニメーションカウンター
+var count = 0;//繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ繧ｫ繧ｦ繝ｳ繧ｿ繝ｼ
 var timer = setInterval(function(){
-  ctx.fillStyle="#fff";//消去時の色
-  ctx.clearRect(0,0,300,300);//消す
-  ctx.fillStyle="#f00";//塗りつぶし色を赤に
+  ctx.fillStyle="#fff";//豸亥悉譎ゅ�ｮ濶ｲ
+  ctx.clearRect(0,0,300,300);//豸医☆
+  ctx.fillStyle="#f00";//蝪励ｊ縺､縺ｶ縺苓牡繧定ｵ､縺ｫ
   ctx.fillRect(30+count,30+count,30,30);
   count++;
   if(count>200){
