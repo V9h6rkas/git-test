@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="jQuery.css" media="all">
+  </head>
+  <body>
+    <div id="content">
+      <div id="target">target</div>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script>
+    $(function () {
+      setTimeout('act()'); //アニメーションを実行1
+    });
+    function act() {
+      $("#target").animate({ //2
+        top: "350px" //要素を動かす位置3
+      }, 3000).animate({//4
+        top: "10px"　//要素を戻す位置5
+      }, 0)//6
+      setTimeout("act()", 3000);//アニメーションを繰り返す間隔7
+    }
+    </script>
+  </body>
+</html>
